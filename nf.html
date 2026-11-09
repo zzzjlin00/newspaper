@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="南方日报">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>南方日报</title>
+</head>
+<body>
+<script>
+const now = new Date();
+const yyyy = now.getFullYear();
+const mm = String(now.getMonth()+1).padStart(2,'0');
+const dd = String(now.getDate()).padStart(2,'0');
+const url = `https://epaper.nfnews.com/nfdaily/html/${yyyy}${mm}/${dd}/node_A01.html`;
+location.replace(url);
+</script>
+</body>
+</html>
